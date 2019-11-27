@@ -1,0 +1,51 @@
+#Wrapper{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;;
+}
+
+#Header{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.04);
+}
+
+/******************/
+/***    NavBar  ***/
+#NavBar{
+    height: 75px;
+    width: 100%;
+}
+
+.navButton{
+    height: 45px;
+    width: auto;
+    position: relative;
+    border-style: none;
+    background-color: pink;
+}
+
+.button{
+    
+}
+
+/**************************/
+/***    Page Content    ***/
+#Content{
+    height: 300px;
+    width: 100%;
+    background: rgba(204, 255, 204, 0.4);
+}
+
+/******************/
+/***    Footer  ***/
+#Footer{
+    height: auto;
+    width: 100%;
+    border-top-style: double;
+    border-top-color: gray;
+}
+
+#Copyright{
+    text-align: center;
+}
