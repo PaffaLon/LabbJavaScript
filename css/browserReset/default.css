@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     pad: 0px;
-    background-image: url("../images/cover/cover1.jpg");
+    background-image: url("../../images/cover/cover1.jpg");
 }
 
 /*******************************************/
@@ -15,6 +15,6 @@ div, aside, footer, nav, aside, button{
 	padding: 0px;
 	left: 0px;
 	right: 0px;
-	font-family: sans-serif;
+	font-family: Roboto;
 /*	background-color: rgba(247, 247, 247, 0.5); */
 }

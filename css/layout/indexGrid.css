@@ -1,0 +1,71 @@
+/**************************************************************************************************/
+/**************************************************************************************************/
+/***        This document holds the grid layout for the websites home page.                     ***/
+/***    *   An element may is called several times in this document.                            ***/
+/***    *   Every time an element is called repetevly it's creating a grid on a deeper leve.    ***/
+/***    *   The css layout looks like.                                                          ***/
+/***    -       1: Comment with grid name.                                                      ***/
+/***    -       2: Grid container.                                                              ***/
+/***    -       3: Grid items / childern.                                                       ***/
+/**************************************************************************************************/
+/**************************************************************************************************/
+
+/**********************/
+/***    Core Grid   ***/
+#Wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+
+#Top-Container{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+#Middle-Container{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+#Footer{
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+
+/****************************/
+/***    Top-Container     ***/
+#Top-Container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    row-gap: auto;
+}
+
+#NavBar{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+/*******************/
+/*** NavBar Grid ***/
+#NavBar{
+    
+}
+
+.navLink{
+
+}
+
+/***********************/
+/***    Footer Grid  ***/
+#Footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+#Copyright{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}

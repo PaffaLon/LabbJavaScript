@@ -1,16 +1,22 @@
+/***    This document only give the index pages a decent styling.  ***/
+/***    No positionng defined in this document.                    ***/
+/***    A Elemnet is only called one in this document ***/
+
 #Wrapper{
     height: 100%;
     width: 100%;
     margin: 0 auto;;
 }
 
-#Header{
+#Top-Container{
     height: 100%;
     width: 100%;
-    background-color: rgba(1, 1, 1, 0.04);
+    background-color: rgba(1, 1, 1, 0.06);
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(1, 1, 1, 0.08);
 }
 
 /******************/
@@ -18,36 +24,32 @@
 #NavBar{
     height: 75px;
     width: 100%;
-    grid-column: 2 /2;
-    grid-row: 2 / 2;
-    display: flex;
     align-items: center;
 /*    -ms-transform: translate(-50%, -50%);*/
 /*    transform: translate(-50%, -50%);*/
 }
 
 .navLink{
-    flex-direction: row;
-    
+    margin-right: 15px;
 }
 
 .navButton{
     height: 45px;
-    width: 133px;
+    width: 144px;
     border-style: none;
-    background-color: rgba(1, 1, 2, 0.058);
+    background-color: rgba(1, 1, 1, 0.058);
 }
 
-.button{
-    
+.navButton:hover{
+    background-color: rgba(1, 1, 1, 0.3);
 }
 
 /**************************/
 /***    Page Content    ***/
-#Content{
+#Middle-Container{
     height: 300px;
     width: 100%;
-    background: rgba(204, 255, 204, 0.4);
+    background: rgba(204, 255, 204, 0.04);
 }
 
 /******************/
@@ -61,4 +63,5 @@
 
 #Copyright{
     text-align: center;
+    font-size: 1.55em;
 }
