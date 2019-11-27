@@ -29,19 +29,35 @@
 /*    transform: translate(-50%, -50%);*/
 }
 
-.navLink{
-    margin-right: 15px;
-}
-
 .navButton{
-    height: 45px;
-    width: 144px;
+    height: 55px;
+    width: 75px;
     border-style: none;
-    background-color: rgba(1, 1, 1, 0.058);
+    background-color: rgba(1, 1, 1, 0.078);
+    transition: 1.3s;
+}
+.wide{ width: 85px; }
+
+.button > p{
+    text-align: center;
+    font-size: 1.32em;
+    font-weight: bolder;
+    transition: 1.3s;
 }
 
 .navButton:hover{
-    background-color: rgba(1, 1, 1, 0.3);
+    background-color: rgba(1, 1, 1, 0.8);
+    width: 95px;
+    animation-name: expand;
+    animation-duration: 1.7s;
+}
+
+
+.button:hover > p{
+    font-size: 1.75em;
+    color: wheat;
+    animation-name: textEffext;
+    animation-duration: 1.5s;
 }
 
 /**************************/
@@ -64,4 +80,28 @@
 #Copyright{
     text-align: center;
     font-size: 1.55em;
+}
+
+
+/*** CSS-3 - Animations ***/
+@keyframes expand{
+    from {
+        background-color: rgba(1, 1, 1, 0.078);
+        width: 75px;
+    }
+    to {
+        background-color: rgba(1, 1, 1, 0.8);
+        width: 85px;
+    }
+}
+
+@keyframes textEffext{
+    from {
+        color: black;
+        font-size: 1.32em;
+    }
+    to {
+        color: wheat;
+        font-size: 1.75em;
+    }
 }

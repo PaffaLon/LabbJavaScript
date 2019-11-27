@@ -18,3 +18,11 @@ div, aside, footer, nav, aside, button{
 	font-family: Roboto;
 /*	background-color: rgba(247, 247, 247, 0.5); */
 }
+
+p{
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+}
