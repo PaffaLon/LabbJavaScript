@@ -11,4 +11,4 @@ function ReverseString(str){
     return joinArray;
 }
 
-alert(ReverseString(str));
+//alert(ReverseString(str));

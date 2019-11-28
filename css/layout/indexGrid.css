@@ -57,6 +57,40 @@
 
 }
 
+/**************************************/
+/***    Middle - Container - Grid   ***/
+#Middle-Container{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 1;
+}
+
+#Site-Content{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+#Banner-Let{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+#Banner-Right{
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+}
+/***    Footer  ***/
+#Footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+#Copyright{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
 /***********************/
 /***    Footer Grid  ***/
 #Footer{

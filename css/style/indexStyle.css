@@ -31,33 +31,42 @@
 
 .navButton{
     height: 55px;
-    width: 75px;
+    width: 140px;
+    margin-left: 10px;
     border-style: none;
     background-color: rgba(1, 1, 1, 0.078);
     transition: 1.3s;
 }
-.wide{ width: 85px; }
+
+.wide{
+    width: 160px;
+}
 
 .button > p{
+    width: 100%;
     text-align: center;
-    font-size: 1.32em;
     font-weight: bolder;
+    font-size: 1.32em;
     transition: 1.3s;
 }
 
 .navButton:hover{
     background-color: rgba(1, 1, 1, 0.8);
-    width: 95px;
+    width: 166px;
     animation-name: expand;
     animation-duration: 1.7s;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
 }
 
-
 .button:hover > p{
+    width: 100%;
     font-size: 1.75em;
     color: wheat;
     animation-name: textEffext;
     animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
 }
 
 /**************************/
@@ -87,11 +96,11 @@
 @keyframes expand{
     from {
         background-color: rgba(1, 1, 1, 0.078);
-        width: 75px;
+        width: 150px;
     }
     to {
         background-color: rgba(1, 1, 1, 0.8);
-        width: 85px;
+        width: 166px;
     }
 }
 

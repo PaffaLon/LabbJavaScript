@@ -13,13 +13,13 @@
         <div id="Wrapper">
             <div id="Top-Container">
                 <nav id="NavBar">
-                    <a id="Button-1" class="navLink">
+                    <a id="Button-1" class="navLink" onclick="ReverseString(GetReversedString)">
                         <button class="navButton button">
                             <p>Reverse String</p>
                         </button>
                     </a>
 
-                    <a id="Button-2" class="navLink">
+                    <a id="Button-2" class="navLink" onclick="GetDaysToChristmas()">
                         <button class="navButton button wide">
                             <p>Days to Christams</p>
                         </button>
@@ -47,7 +47,19 @@
             <div id="Middle-Container">
                 <div id="Site-Content">
                     <div>
-                        <p id="GetReversedString"></p>
+                        <p id="GetReversedString">Lexicon</p>
+                    </div>
+                    <div>
+                        <p id="GetDaysToChristams">Remaning days to 24 december:</p>
+                    </div>
+                    <div>
+                        <p id="GetClosestNumTo100">Lexicon</p>
+                    </div>
+                    <div>
+                        <p id="GetGuessTheNumber">Guss the number</p>
+                    </div>
+                    <div>
+                        <p id="GetStringExtension">Lexicon</p>
                     </div>
                 </div>
                 <!-- The Banner divs holds potential content to the edge of the screen. That is not related to the pages purpose.-->
@@ -58,10 +70,11 @@
                 <p id="Copyright">© Tobias Olsson</p>
             </footer>
         </div>
-    </body>
-    <script src="../js/closestToHundred.js"></script>
+    <!--<script src="../js/closestToHundred.js"></script>
     <script src="../js/daysToChristams.js"></script>
     <script src="../js/gussTheNumber.js"></script>
+    <script src="../js/StringExtension.js"></script>-->
     <script src="../js/reverseString.js"></script>
     <script src="../js/ButtonClickEvent.js"></script>
+    </body>
 </html>
