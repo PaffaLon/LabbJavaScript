@@ -1,17 +1,28 @@
-var str = "Lexicon";
-var newString;
+const str = "Lexicon";
+let ReversedString;
+let getStringSample;
 
 
+function Reverse(getStringSample){
+
+    if(getStringSample != str){
+        getStringSample = str;
+    }
+    if(getStringSample == "nocixeL"){
+        getStringSample = ReversedString;
+    }
+    let splitString = getStringSample.split("");
+    // ["L", "e", "x", "i", "c", "o", "n"]
+    let reverseArray = splitString.reverse();
+    // ["n", "o", "c", "i", "x", "e", "L"]
+    let joinArray = reverseArray.join("");
+    ReversedString = joinArray;
+}
 
 
 function ReverseString(){
-    var splitString = str.split("");
-    // ["L", "e", "x", "i", "c", "o", "n"]
-    var reverseArray = splitString.reverse();
-    // ["n", "o", "c", "i", "x", "e", "L"]
-    var joinArray = reverseArray.join("");
-
-    document.getElementById("GetReversedString").innerHTML = joinArray;
+    Reverse();
+    document.getElementById("GetReversedString").innerHTML = ReversedString; 
 }
 
 function GetDaysToChristmas(){
@@ -21,7 +32,6 @@ function GetDaysToChristmas(){
     var yyyy = today.getFullYear();
     
     today = mm + '/' + dd + '/' + yyyy;
-    alert(today);
     CountDaysToNextChristmas();
 }
 
@@ -46,12 +56,13 @@ function CountDaysToNextChristmas(){
     var Final_Result = Result.toFixed(0); 
     
     //To display the final_result value 
-    alert("Number of days remaining till christmas <br>" 
-                + present_date + "<br> and <br>" 
-                + christmas_day + " is: <br> " 
-                + Final_Result); 
+    //alert("Number of days remaining till christmas <br>" 
+    //            + present_date + "<br> and <br>" 
+    //            + christmas_day + " is: <br> " 
+    //            + Final_Result); 
 
-    document.getElementById("GetDaysToChristams").innerHTML = present_date + christmas_day + Final_Result;
+    //document.getElementById("GetDaysToChristams").innerHTML = present_date + christmas_day + Final_Result;
+    document.getElementById("GetDaysToChristams").innerHTML = Final_Result;
 }
 
 

@@ -68,11 +68,13 @@
 }
 
 .navButton:hover{
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 0.79);
     animation-name: color;
     animation-duration: 1.7s;
     animation-iteration-count: 1;
     animation-delay: 0.4s;
+
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 2);
 }
 
 .navButton:hover > p{
@@ -93,6 +95,14 @@
     background: rgba(204, 255, 204, 0.04);
 }
 
+/**********************************/
+/***  Main content of the page  ***/
+.item{
+    min-height: 20px;
+    max-height: 50px;
+    width: 100%;
+}
+
 /******************/
 /***    Footer  ***/
 #Footer{
@@ -101,6 +111,11 @@
     bottom: 0;
     border-top-style: double;
     border-top-color: gray;
+}
+
+#Footer > p{
+    height: 100%;
+    text-align: center;
 }
 
 #Copyright{
@@ -134,7 +149,7 @@
         background-color: rgba(1, 1, 1, 0.078);
     }
     to {
-        background-color: rgba(1, 1, 1, 0.8);
+        background-color: rgba(1, 1, 1, 0.79);
     }
 }
 
