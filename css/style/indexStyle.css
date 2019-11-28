@@ -1,0 +1,107 @@
+/***    This document only give the index pages a decent styling.  ***/
+/***    No positionng defined in this document.                    ***/
+/***    A Elemnet is only called one in this document ***/
+
+#Wrapper{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;;
+}
+
+#Top-Container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.06);
+    display: grid;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(1, 1, 1, 0.08);
+}
+
+/******************/
+/***    NavBar  ***/
+#NavBar{
+    height: 75px;
+    width: 100%;
+    align-items: center;
+/*    -ms-transform: translate(-50%, -50%);*/
+/*    transform: translate(-50%, -50%);*/
+}
+
+.navButton{
+    height: 55px;
+    width: 75px;
+    border-style: none;
+    background-color: rgba(1, 1, 1, 0.078);
+    transition: 1.3s;
+}
+.wide{ width: 85px; }
+
+.button > p{
+    text-align: center;
+    font-size: 1.32em;
+    font-weight: bolder;
+    transition: 1.3s;
+}
+
+.navButton:hover{
+    background-color: rgba(1, 1, 1, 0.8);
+    width: 95px;
+    animation-name: expand;
+    animation-duration: 1.7s;
+}
+
+
+.button:hover > p{
+    font-size: 1.75em;
+    color: wheat;
+    animation-name: textEffext;
+    animation-duration: 1.5s;
+}
+
+/**************************/
+/***    Page Content    ***/
+#Middle-Container{
+    height: 300px;
+    width: 100%;
+    background: rgba(204, 255, 204, 0.04);
+}
+
+/******************/
+/***    Footer  ***/
+#Footer{
+    height: auto;
+    width: 100%;
+    border-top-style: double;
+    border-top-color: gray;
+}
+
+#Copyright{
+    text-align: center;
+    font-size: 1.55em;
+}
+
+
+/*** CSS-3 - Animations ***/
+@keyframes expand{
+    from {
+        background-color: rgba(1, 1, 1, 0.078);
+        width: 75px;
+    }
+    to {
+        background-color: rgba(1, 1, 1, 0.8);
+        width: 85px;
+    }
+}
+
+@keyframes textEffext{
+    from {
+        color: black;
+        font-size: 1.32em;
+    }
+    to {
+        color: wheat;
+        font-size: 1.75em;
+    }
+}

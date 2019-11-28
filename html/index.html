@@ -3,13 +3,15 @@
     <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" type="text/css" href="../css/default.css"/>
-            <link rel="stylesheet" type="text/css" href="../css/indexGrid.css/"/>
-            <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+
+            <link rel="stylesheet" type="text/css" href="../css/layout/indexGrid.css"/>
+            <link rel="stylesheet" type="text/css" href="../css/layout/indexFlex.css"/>
+            <link rel="stylesheet" type="text/css" href="../css/style/indexStyle.css"/>
+            <link rel="stylesheet" type="text/css" href="../css/browserReset/default.css"/>
     </head>
     <body>
         <div id="Wrapper">
-            <div id="Header">
+            <div id="Top-Container">
                 <nav id="NavBar">
                     <a id="Button-1" class="navLink">
                         <button class="navButton button">
@@ -18,19 +20,19 @@
                     </a>
 
                     <a id="Button-2" class="navLink">
-                        <button class="navButton button">
+                        <button class="navButton button wide">
                             <p>Days to Christams</p>
                         </button>
                     </a>
 
                     <a id="Button-3" class="navLink">
-                        <button class="navButton button">
+                        <button class="navButton button wide">
                             <p>Guss the Number</p>
                         </button>
                     </a>
 
                     <a id="Button-4" class="navLink">
-                        <button class="navButton button">
+                        <button class="navButton button wide">
                             <p>Closest to hundred</p>
                         </button>
                     </a>
@@ -42,8 +44,13 @@
                     </a>
                 </nav>
             </div>
-            <div id="Content">
+            <div id="Middle-Container">
+                <div id="Site-Content">
 
+                </div>
+                <!-- The Banner divs holds potential content to the edge of the screen. That is not related to the pages purpose.-->
+                <div id="Banner-Left"></div>
+                <div id="Banner-Right"></div>
             </div>
             <footer id="Footer">
                 <p id="Copyright">© Tobias Olsson</p>
