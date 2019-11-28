@@ -31,18 +31,13 @@
 
 .navButton{
     height: 55px;
-    width: 140px;
     margin-left: 10px;
     border-style: none;
     background-color: rgba(1, 1, 1, 0.078);
     transition: 1.3s;
 }
 
-.wide{
-    width: 160px;
-}
-
-.button > p{
+.navButton > p{
     width: 100%;
     text-align: center;
     font-weight: bolder;
@@ -50,16 +45,37 @@
     transition: 1.3s;
 }
 
-.navButton:hover{
-    background-color: rgba(1, 1, 1, 0.8);
+.button-small{
+    width: 140px;
+}
+.button-wide{
     width: 166px;
-    animation-name: expand;
+}
+
+.button-small:hover{
+    width: 166px;
+    animation-name: GrowSmallButton;
+    animation-duration: 1.7s;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
+}
+.button-wide:hover{
+    width: 199px;
+    animation-name: GrowWideButton;
     animation-duration: 1.7s;
     animation-iteration-count: 1;
     animation-delay: 0.4s;
 }
 
-.button:hover > p{
+.navButton:hover{
+    background-color: rgba(1, 1, 1, 0.8);
+    animation-name: color;
+    animation-duration: 1.7s;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
+}
+
+.navButton:hover > p{
     width: 100%;
     font-size: 1.75em;
     color: wheat;
@@ -93,14 +109,31 @@
 
 
 /*** CSS-3 - Animations ***/
-@keyframes expand{
+
+@keyframes GrowSmallButton{
+    from{
+        width: 150px;
+    }
+    to{
+        width: 166px;
+    }
+}
+
+@keyframes GrowWideButton{
+    from{
+        width: 166px;
+    }
+    to{
+        width: 199px;
+    }
+}
+
+@keyframes color{
     from {
         background-color: rgba(1, 1, 1, 0.078);
-        width: 150px;
     }
     to {
         background-color: rgba(1, 1, 1, 0.8);
-        width: 166px;
     }
 }
 
