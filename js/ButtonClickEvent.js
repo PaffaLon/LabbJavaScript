@@ -43,10 +43,10 @@ function CountDaysToNextChristmas(){
     var present_date = new Date(); 
     
     // 0-11, Months of they year is 0 indexed.
-    var christmas_day = new Date(present_date.getFullYear(), 11, 24) 
+    var christmas_day = new Date(present_date.getFullYear(), 11, 25) 
     
     // To Calculate next year's Christmas if passed already. 
-    if (present_date.getMonth() == 11 && present_date.getdate() > 24) 
+    if (present_date.getMonth() == 11 && present_date.getdate() > 25) 
         christmas_day.setFullYear(christmas_day.getFullYear() + 1) 
     
     // To Calculate the result in milliseconds and then converting into days 
