@@ -42,7 +42,7 @@ function CountDaysToNextChristmas(){
     // To set present_dates to two variables 
     var present_date = new Date(); 
     
-    // 0-11 is Month in JavaScript 
+    // 0-11, Months of they year is 0 indexed.
     var christmas_day = new Date(present_date.getFullYear(), 11, 24) 
     
     // To Calculate next year's Christmas if passed already. 

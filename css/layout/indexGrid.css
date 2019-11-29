@@ -96,7 +96,7 @@
 #Site-Content{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: 10px auto 2fr 2fr 2fr 2fr;
 }
 
 .item > p{

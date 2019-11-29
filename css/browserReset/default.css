@@ -20,7 +20,7 @@ div, aside, footer, nav, aside, button{
 /*	background-color: rgba(247, 247, 247, 0.5); */
 }
 
-p{
+p, h1, h2, h3, h4, h5, h6{
 	margin: 0px;
 	padding: 0px;
 	left: 0px;
