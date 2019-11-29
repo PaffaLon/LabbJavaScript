@@ -13,31 +13,31 @@
         <div id="Wrapper">
             <div id="Top-Container">
                 <nav id="NavBar">
-                    <a id="Button-1" class="navLink" onclick="ReverseString(GetReversedString)">
+                    <a id="Button-1" class="navLink" onclick="ReverseString()">
                         <button class="navButton button-small ">
                             <p>Reverse String</p>
                         </button>
                     </a>
 
-                    <a id="Button-2" class="navLink" onclick="CountDaysToNextChristmas(GetDaysToChristams)">
+                    <a id="Button-2" class="navLink" onclick="CountDaysToNextChristmas()">
                         <button class="navButton button-wide">
                             <p>Days to Christams</p>
                         </button>
                     </a>
 
-                    <a id="Button-3" class="navLink">
+                    <a id="Button-3" class="navLink" onclick="GuessNumber()">
                         <button class="navButton button-wide">
                             <p>Guss the Number</p>
                         </button>
                     </a>
-
-                    <a id="Button-4" class="navLink">
+                    
+                    <a id="Button-4" class="navLink" onclick="NearesetTo100()">
                         <button class="navButton button-wide">
                             <p>Closest to hundred</p>
                         </button>
                     </a>
 
-                    <a id="Button-5" class="navLink">
+                    <a id="Button-5" class="navLink" onclick="SearhString()">
                         <button class="navButton button-small">
                             <p>String addon</p>
                         </button>
@@ -50,23 +50,35 @@
                         <h1 id="GetReversedString">Lexicon</h1>
                     </div>
                     <div id="item-2" class="item">
-                        <h2>Remaning days to the 24 of december:</h2>
-                        <p id="GetDaysToChristams"></p>
-                    </div>
-                    <div id="item-3" class="item">
                         <p id="GetGuessTheNumber">Guess the number!</p>
                         <form>
                             <p>Enter number:</p>
-                            <input type="text">
-                            <input type="submit">
+                            <input id="text" type="text">
                         </form>
+                        <p id="GetRandomNumber"></p>
+                    </div>
+                    <div id="item-3" class="item">
+                        <h2>Remaning days to the 24 of december:</h2>
+                        <p id="GetDaysToChristams"></p>
                     </div>
                     <div id="item-4" class="item">
-                        <p id="GetClosestNumTo100">Close to 100:</p>
-                    </div>
-                    <div id="item-5" class="item">
-                        <p id="GetStringExtension">Attach string to string.</p>
+                        <h3>Attach string to string.</h3>
+                        <form>
+                            <p>Enter new string smaple.</p>
+                            <input id="Sample" type="text">
+                        </form>
+                            <p id="GetNewString"></p>
                     </div>  
+                    <div id="item-5" class="item">
+                        <h3>Close to 100:</h3>
+                        <form>
+                            <p>Enter a number.</p>
+                            <input id="value1" type="text">
+                            <p>Enter a number.</p>
+                            <input id="value2" type="text">
+                        </form>
+                        <p id="GetClosests"></p>
+                    </div>
                 </div><!--END: Site-Container-->
                 <!-- The Banner divs holds potential content to the edge of the screen. That is not related to the pages purpose.-->
                 <div id="Banner-Left"></div>
@@ -76,6 +88,7 @@
                 <p id="Copyright">© Tobias Olsson</p>
             </footer>
         </div>
+        <script src="../js/StringExtension.js"></script>
         <script src="../js/ButtonClickEvent.js"></script>
     </body>
 </html>
