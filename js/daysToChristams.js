@@ -5,7 +5,7 @@ function GetDaysToChristmas(){
     var yyyy = today.getFullYear();
     
     today = mm + '/' + dd + '/' + yyyy;
-    CountDaysToNextChristmas();
+    //CountDaysToNextChristmas();
 }
 
 function CountDaysToNextChristmas(){
@@ -19,7 +19,7 @@ function CountDaysToNextChristmas(){
     var christmas_day = new Date(present_date.getFullYear(), 11, 25) 
     
     // To Calculate next year's Christmas if passed already. 
-    if (present_date.getMonth() == 11 && present_date.getdate() > 25) 
+    if (present_date.getMonth() == 11 && present_date.getDate() > 25) 
         christmas_day.setFullYear(christmas_day.getFullYear() + 1) 
     
     // To Calculate the result in milliseconds and then converting into days 
@@ -36,4 +36,5 @@ function CountDaysToNextChristmas(){
 
     //document.getElementById("GetDaysToChristams").innerHTML = present_date + christmas_day + Final_Result;
     document.getElementById("GetDaysToChristams").innerHTML = Final_Result;
+    console.log(Final_Result);
 }
