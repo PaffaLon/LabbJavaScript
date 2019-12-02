@@ -45,8 +45,5 @@
     flex-direction: row;
 }
 #item-3 > h2{
-    
-}
-#item-3 > p{
-    
+    order: 1;
 }
